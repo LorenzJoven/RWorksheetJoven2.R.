@@ -17,4 +17,8 @@ x = c(-3:2)
 x
 x[2]<-0
 x
+"rivers"
+data <- c(length(rivers), sum(rivers), mean(rivers), median(rivers), var(rivers),
+          sd(rivers), min(rivers), max(rivers))
+data
 

@@ -124,7 +124,7 @@ vegetables
 #[1] "garlic"
 
 #[[6]]
-#[1] "cornonion"
+#[1] "onion"
 
 #[[7]]
 #[1] "corn"
@@ -139,6 +139,153 @@ vegetables
 #[1] "mushroom"
 
 
+#b Add 2 additional vegetables after the last vegetables in the list
+addVegetables <- c(vegetables, "lady's finger", "peas")
+addVegetables 
 
 
+#[[1]]
+#[1] "lettuce"
 
+#[[2]]
+#[1] "cucumber"
+
+#[[3]]
+#[1] "brocolli"
+
+#[[4]]
+#[1] "potato"
+
+#[[5]]
+#[1] "garlic"
+
+#[[6]]
+#[1] "cornonion"
+
+#[[7]]
+#[1] "corn"
+
+#[[8]]
+#[1] "eggplant"
+
+#[[9]]
+#[1] "carrot"
+
+#[[10]]
+#[1] "mushroom"
+
+#[[11]]
+#[1] "lady's finger"
+
+#[[12]]
+#[1] "peas"
+
+#c Add 4 additional vegetables after index 5
+addVegetables4 <- append(addVegetables, c("lettuce", "beansprouts", "radish", "celery"), after = 5)
+addVegetables4
+
+#[[1]]
+#[1] "lettuce"
+
+#[[2]]
+#[1] "cucumber"
+
+#[[3]]
+#[1] "broccoli"
+
+#[[4]]
+#[1] "potato"
+
+#[[5]]
+#[1] "garlic"
+
+#[[6]]
+#[1] "lettuce"
+
+#[[7]]
+#[1] "beansprouts"
+
+#[[8]]
+#[1] "radish"
+
+#[[9]]
+#[1] "celery"
+
+#[[10]]
+#[1] "onion"
+
+#[[11]]
+#[1] "corn"
+
+#[[12]]
+#[1] "eggplant"
+
+#[[13]]
+#[1] "carrot"
+
+#[[14]]
+#[1] "mushroom"
+
+#[[15]]
+#[1] "lady's finger"
+
+#[[16]]
+#[1] "peas
+
+num_vegetables <- length(addVegetables4)
+num_vegetables 
+
+# [1] 18
+
+#Write the codes and its output.
+addVegetablesR <- addVegetables4[-c(5,10,15)]
+addVegetablesR 
+
+#[[1]]
+#[1] "lettuce"
+
+#[[2]]
+#[1] "cucumber"
+
+#[[3]]
+#[1] "brocolli"
+
+#[[4]]
+#[1] "potato"
+
+#[[5]]
+#[1] "lettuce"
+
+#[[6]]
+#[1] "beansprouts"
+
+#[[7]]
+#[1] "radish"
+
+#[[8]]
+#[1] "celery"
+
+#[9]]
+#[1] "corn"
+
+#[[10]]
+#[1] "eggplant"
+
+#[[11]]
+#[1] "carrot"
+
+#[[12]]
+#[1] "mushroom"
+
+#[[13]]
+#[1] "peas"
+
+#[[14]]
+#[1] "lady's finger"
+
+#[[15]]
+#[1] "peas"
+
+num_addVegetablesR <- length(addVegetablesR)
+num_addVegetablesR
+#[1] 15

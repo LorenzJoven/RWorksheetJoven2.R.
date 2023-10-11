@@ -1,29 +1,79 @@
+#THIS IS NUM 1
 x = seq(-5,5)
 x
+#The output is [1] -5 -4 -3 -2 -1  0  1  2  3  4  5; The value starts from -5 up to 5 and by increasing 1 in value
 x <- 1:7.
 x
+#The value of x is [1] 1 2 3 4 5 6 7
+
+#THIS IS NUM 2
 seq(1, 3, by=0.2)
+#The output [1] 1.0 1.2 1.4 1.6 1.8 2.0 2.2 2.4 2.6 2.8 3.0; The value starts from 1.0 up to 3.0 by increasing 0.2
+
+#THIS IS NUM 3
 ages = c(34, 28, 22, 36, 27, 18, 52, 39, 42, 29, 35, 31, 27,
          22, 37, 34, 19, 20, 57, 49, 50, 37, 46, 25, 17, 37, 43, 53, 41, 51, 35,
          24,33, 41, 53, 40, 18, 44, 38, 41, 48, 27, 39, 19, 30, 61, 54, 58, 26,
          18)
 ages 
 ages [3]
+#The value of the third element is [1] 22
 ages [c(2,4)]
+#The value of the second and fourth elements are [1] 28 36
 ages[-c(4,12)]
+#The output is as follows:
+#[1] 34 28 22 36 27 1852 39 42 29 35 31 27 22 37 34 19 20 57 49 50 37 46 25 17
+#[26] 37 43 53 41 51 35 24 33 41 53 40 18 44 38 41 48 27 39 19 30 61 54 58 26 18
+#[1] 34 28 22 27 18 52 39 42 29 35 27 22 37 34 19 20 57 49 50 37 46 25 17 37 43
+#[26] 53 41 51 35 24 3341 53 40 18 44 38 41 48 27 39 19 30 61 54 58 26 18
+
+#THIS IS NUM 4
 x <- c("first"=3, "second"=0, "third"=9)
 x[c("first", "third")]
+#The output is the words first and third, and under them is the number 3 and 9 that aligns with each word
+#first third 
+#3     9 
+
+#THIS IS NUM 5
 x = c(-3:2)
 x
 x[2]<-0
 x
+#The 2nd element which is -2 changes into 0
+#[1] -3 -2 -1  0  1  2
+#[1] -3  0 -1  0  1  2
+
+#THIS IS NUM 6
+month <- c("Jan", "Feb", "March", "Apr", "May", "June")
+month
+price_per_liter <- c(52.50,57.25,60.00,65.00,74.25,54.00)
+price_per_liter
+purchase_quantity <- c(25,30,40,50,10,45)
+purchase_quantity
+data.frame <- data.frame(month,  price_per_liter,  purchase_quantity)
+data.frame
+#[1] "Jan"   "Feb"   "March" "Apr"   "May"   "June" 
+#[1] 52.50 57.25 60.00 65.00 74.2554.00
+#[1] 25 30 40 50 10 45
+#month price_per_liter purchase_quantity
+#1   Jan           52.50                25
+#2   Feb           57.25                30
+#3 March           60.00                40
+#4   Apr           65.00                50
+#5   May           74.25                10
+#6  June           54.00                4
+weighted.mean(price_per_liter,purchase_quantity)
+#The average fuel expenditure of Mr. Cruz from Jan to June is 59.2625
+
+#THIS IS NUM 7
 "rivers"
 data <- c(length(rivers), sum(rivers), mean(rivers), median(rivers), var(rivers),
           sd(rivers), min(rivers), max(rivers))
 data
 #The results are 141.0000  83357.0000    591.1844    425.0000 243908.4086    493.8708    135.0000   3710.0000
-#8
-#a
+
+#THIS IS NUM 8
+#A
 power_ranking <- c(1:25)
 celebtrity_name <-c("Tom Cruise", "Rolling Stone", "Oprah Winfrey", "U2", "Tiger Woods", "Steven Spielberg", "Howard Stern", "50 Cent", 
                     "Cast of Sopranos", "Dan Brown", "Bruce Springsteen", "Donald Trump", "Muhammad Ali", "Paul McCartney", "George Lucas",
@@ -62,10 +112,11 @@ Power_Ranking
 #           19            19               J.K Rowling        75
 #           20            20                Bradd Pitt        25
 
-#e The  PowerRank result was change to 10 to 20 elements.
+#E The  PowerRank result was change to 10 to 20 elements.
 save(Power_Ranking, file = "Ranks.RData")
 load("Ranks.RData")
-#9
+
+#THIS IS NUM 9
 library(readxl)
 hotels_vienna <- read_excel("hotels-vienna.xlsx")
 View(hotels_vienna)
@@ -73,7 +124,7 @@ hotels_vienna
 #b
 dim(hotels_vienna)  #[1] 428  24
 
-#c
+#C
 col <- colnames(hotels_vienna)
 col
 colnames1 <- col[c(1,6,7,8,22,24)]
@@ -103,7 +154,7 @@ tail(hotels_vienna, 6L)
 # 5 Austria Vienna      169          City centre  Donauturm    Wieden           58 Vienna   3   3       
 # 6 Austria Vienna      80           City centre  Donauturm    Wieden          110 Vienna   3.5 NA  
 
-#10
+#THIS IS NUM 10
 vegetables <- list("lettuce", "cucumber", "brocolli","potato", "garlic", "onion", "corn","eggplant", "carrot", "mushroom")
 
 vegetables
@@ -289,3 +340,4 @@ addVegetablesR
 num_addVegetablesR <- length(addVegetablesR)
 num_addVegetablesR
 #[1] 15
+
